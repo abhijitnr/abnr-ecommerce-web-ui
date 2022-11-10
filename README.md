@@ -1,1 +1,1 @@
-# This is an e-commerce website built by Abhijit Biswas.
+# This is an e-commerce website design and built by Abhijit Biswas.
