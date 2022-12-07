@@ -55,3 +55,13 @@
 - ### [package-lock.json](./package-lock.json)
 
 - ### [package.json](./package.json)
+
+## Dependencies added
+
+- @emotion/react
+- @emotion/styled
+- @mui/icons-material
+- @mui/material
+- styled-components
+- react-router-dom
+- axios

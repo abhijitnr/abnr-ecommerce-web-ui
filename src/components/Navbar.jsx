@@ -3,6 +3,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import { mobile } from "../responsive";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   height: 60px;
@@ -50,7 +51,9 @@ const Center = styled.div`
 `;
 
 const Logo = styled.h1`
+  cursor: pointer;
   font-weight: bold;
+  color: black;
   ${mobile({ fontSize: "24px" })}
 `;
 
@@ -88,7 +91,9 @@ function Navbar() {
         </Left>
 
         <Center>
-          <Logo>ABNR</Logo>
+          <Link to="/">
+            <Logo>ABNR</Logo>
+          </Link>
         </Center>
 
         <Right>
