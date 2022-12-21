@@ -25,7 +25,9 @@ function Products({ category, filters, sort }) {
         );
 
         setProducts(response.data);
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     };
     getProducts();
   }, [category]);
@@ -33,7 +35,7 @@ function Products({ category, filters, sort }) {
   useEffect(() => {
     category &&
       setFilteredProducts(
-        products.filter((item) =>
+        products?.filter((item) =>
           Object.entries(filters).every(([key, value]) =>
             item[key].includes(value)
           )
@@ -60,7 +62,7 @@ function Products({ category, filters, sort }) {
   return (
     <Container>
       {category
-        ? filteredPrducts.map((item) => <Product key={item.id} item={item} />)
+        ? filteredPrducts?.map((item) => <Product key={item.id} item={item} />)
         : products
             .slice(0, 8)
             .map((item) => <Product key={item.id} item={item} />)}
