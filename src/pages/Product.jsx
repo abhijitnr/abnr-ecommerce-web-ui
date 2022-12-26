@@ -165,7 +165,7 @@ function Product() {
         <InfoContainer>
           <Title>{product.title}</Title>
           <Description>{product.description}</Description>
-          <Price>$ {product.price}</Price>
+          <Price>₹ {product.price}</Price>
 
           <FilterContainer>
             <Filter>
